@@ -1,138 +1,285 @@
-# Fotobomb Privacy Policy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Fotobomb Privacy Policy explaining how we collect, use, and protect your personal data in compliance with UK GDPR and EU GDPR (where applicable)." />
+    <title>Privacy Policy</title>
+    <style>
+        :root{
+          --bg:#121212; --surface:#2A2A2A; --text:#FFFFFF;
+          --muted:rgba(255,255,255,.80); --divider:rgba(255,255,255,.2);
+          --stroke:rgba(255,255,255,.15); --btn:#000000; --btn-text:#FFFFFF;
+          --radius:16px; --shadow:0 8px 24px rgba(0,0,0,.35);
+        }
+        @media (prefers-color-scheme: light){ :root{ color-scheme: dark; } }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+          margin:0;
+          font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+          background:var(--bg); color:var(--text);
+          -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+        }
+        .container{ max-width:860px; margin:0 auto; padding:24px; }
+        header, main, footer{display:block}
+        .page-title{
+          font-size:clamp(1.6rem, 2.2vw + 1rem, 2.25rem);
+          line-height:1.25; margin:8px 0 12px; letter-spacing:.2px;
+        }
+        .lead{ color:var(--muted); margin:0 0 22px; }
+        .card{
+          background:var(--surface); border:1px solid var(--stroke);
+          box-shadow:var(--shadow); border-radius:var(--radius);
+          padding:20px; margin:16px 0;
+        }
+        h2,h3{ margin:0 0 12px; line-height:1.35; }
+        h2{font-size:1.25rem}
+        h3{font-size:1.05rem;color:var(--muted)}
+        p, ul, ol{margin:0 0 14px}
+        ul, ol{padding-left:1.15rem}
+        li + li{margin-top:6px}
+        .divider{ height:1px;background:var(--divider);border:0;margin:16px 0; }
+        a{color:#9ECFFF;text-decoration:none}
+        a:hover{text-decoration:underline}
+        a:focus{outline:3px solid #9ECFFF;outline-offset:2px;border-radius:6px}
+        .logo{ display:block;margin:0 auto 12px auto; width:min(220px, 60%);height:auto; }
+        footer{
+          color:var(--muted); text-align:center;
+          border-top:1px solid var(--divider);
+          margin-top:24px;padding:18px 0 8px; font-size:.95rem;
+        }
+        .meta{color:var(--muted);font-size:.95rem}
+        .pill{
+          display:inline-block; padding:6px 10px; border-radius:999px;
+          background:rgba(255,255,255,.08); border:1px solid var(--stroke);
+          color:var(--muted); font-size:.9rem;
+        }
+        @media (prefers-reduced-motion: reduce){ .btn{transition:none} }
+    </style>
+    <meta name="theme-color" content="#121212">
+</head>
+<body>
+<main class="container" role="main">
+    <header>
+        <h1 class="page-title">Privacy Policy</h1>
+        <p class="lead">
+            We respect your privacy. This policy explains what we collect, how we use it, and your choices under the UK GDPR and the Data Protection Act 2018.
+            Where EU law applies (for example, if you are in the EEA), this policy is also intended to meet EU GDPR requirements.
+        </p>
+        <p class="meta">Effective: 29 March 2026 • Version 2.0</p>
+    </header>
 
-**Effective:** 9 Feb 2026  
-**Version:** 2.0
+    <section class="card">
+        <h2>Who We Are (Data Controller)</h2>
+        <p>
+            Fotobomb is operated from Wales, United Kingdom. For the purposes of the UK GDPR and the Data Protection Act 2018,
+            the Fotobomb operator(s) are the data controller responsible for your personal data.
+        </p>
+        <p class="meta">Contact: use the in-app support section (Fotobombadvertising@gmail.com).</p>
+    </section>
 
-We respect your privacy. This policy explains what we collect, how we use it, and your choices under the **UK GDPR** and the **Data Protection Act 2018**. Where EU law applies (for example, if you are in the EEA), this policy is also intended to meet EU GDPR requirements.
+    <section class="card">
+        <h2>Information We Collect</h2>
 
----
+        <h3>Account &amp; profile information</h3>
+        <ul>
+            <li>Name, email address, and authentication identifiers provided via Google Sign-In (including display name, email, and Google profile photo URL)</li>
+            <li>Profile details you choose to provide (e.g., display name, business name, social links, profile type)</li>
+            <li>Content you upload (photos, descriptions, location listings)</li>
+        </ul>
 
-## 1) Who We Are (Data Controller)
+        <h3>Profile images and portfolio photos</h3>
+        <p>
+            If you upload a profile photo or portfolio images (Photographer accounts only), these are stored in Firebase Storage under your account's unique identifier.
+            Profile images are publicly accessible as part of your photographer profile. Portfolio images are displayed to other users within the app.
+            Images are deleted from storage when you remove them from your profile, downgrade your account, or delete your account.
+        </p>
 
-Fotobomb is operated from Wales, United Kingdom. For the purposes of the UK GDPR and the Data Protection Act 2018, the Fotobomb operator(s) are the data controller responsible for your personal data.
+        <h3>Location data</h3>
+        <p>
+            Location is used to provide map features and nearby functionality while the app is in use.
+            If you enable background location, location may be processed in the background to support features such as alerts.
+            You can control permissions at any time in your device settings.
+        </p>
+        <p>
+            <strong>Photographer location sharing:</strong> If you are a Pro Photographer and enable "Appear on Map", your approximate current location
+            (latitude and longitude) is stored in our database and displayed publicly on the map to other app users.
+            This data is removed when you stop sharing, when sharing auto-disables after 8 hours, or when you downgrade or delete your account.
+            We do not store a continuous history of your movements — only your most recent shared position while sharing is active.
+        </p>
+        <p>
+            <strong>Photographer approximate area:</strong> If you set an approximate public area in your profile (a rounded location used for
+            "Near Me" filtering), this is stored as part of your public profile and is visible to other users. It is less precise than your
+            live shared location and is intended only to indicate the general area you operate in.
+        </p>
+        <p class="meta">We do not aim to store a continuous "location history" of your movements beyond what is described above.</p>
 
-**Contact:** Use the in-app support section (Fotobombadvertising@gmail.com).
+        <h3>Fotobomb log data</h3>
+        <p>
+            When you log a Fotobomb (a record of a pass captured by a roadside photographer), the entry may include the photographer's name or
+            business name and the date of the pass. This constitutes personal data about a third party. You should only log accurate information
+            and must not use the log to harass or track individuals. See our Terms &amp; Conditions for more detail.
+        </p>
 
----
+        <h3>Purchase information</h3>
+        <p>
+            Purchases and subscriptions are processed by Google Play. We receive entitlement and transaction verification data needed
+            to provide purchases (for example, whether a Pro subscription or ad removal is active, and the purchase token used to verify
+            the subscription against Google Play). We do not receive your full payment card details.
+        </p>
 
-## 2) Information We Collect
+        <h3>Device, usage &amp; diagnostics</h3>
+        <ul>
+            <li>Device information (model, OS version, app version, language)</li>
+            <li>App activity/usage data and performance diagnostics</li>
+            <li>Log and crash data to help fix bugs and improve reliability</li>
+        </ul>
+    </section>
 
-### Account & profile information
-- Name, email address, and authentication identifiers
-- Profile details you choose to provide (e.g., display name, business name, social links, profile type)
-- Content you upload (photos, descriptions, location listings)
+    <section class="card">
+        <h2>Permissions the App Uses</h2>
+        <ul>
+            <li><strong>Location (fine/coarse, foreground/background):</strong> map features, proximity/nearby functions, and photographer location sharing</li>
+            <li><strong>Notifications:</strong> service alerts (location sharing reminders, auto-disable notifications) and updates where enabled</li>
+            <li><strong>Foreground service:</strong> to run essential background tasks where needed</li>
+            <li><strong>Internet:</strong> authentication, maps, syncing, subscriptions, ads</li>
+            <li><strong>Photos/Media/Storage:</strong> to upload or save media you choose to share (profile photos and portfolio images)</li>
+        </ul>
+        <p class="meta">You can manage or revoke permissions at any time via device settings or from Menu → Settings within the app.</p>
+    </section>
 
-### Location data
-Location is used to provide map features and nearby functionality while the app is in use. If you enable background location, location may be processed in the background to support features such as alerts. You can control permissions at any time in your device settings.
+    <section class="card">
+        <h2>How We Use Your Data</h2>
+        <ul>
+            <li>Provide the Service (accounts, profiles, maps, listings, and uploads)</li>
+            <li>Enable location-based features (including Photographer location sharing when you choose to enable it)</li>
+            <li>Verify and manage subscriptions/entitlements (e.g., Pro Photographer badge, ad removal) — entitlements are re-verified against Google Play on each app session</li>
+            <li>Display ads (unless removed) and measure ad performance</li>
+            <li>Maintain security, prevent fraud/abuse, and enforce our Terms</li>
+            <li>Improve performance, reliability, and user experience</li>
+            <li>Send essential service messages such as location sharing reminders and auto-disable notifications (and marketing only where you have consented, if applicable)</li>
+        </ul>
 
-We do not aim to store a continuous “location history” of your movements. However, some location-related data (such as a listing you create, or your chosen “share location” status if you are a Photographer) may be stored as part of providing the Service.
+        <h3>Legal bases for processing</h3>
+        <ul>
+            <li><strong>Contract:</strong> to provide the Service you request (account, features, subscriptions)</li>
+            <li><strong>Consent:</strong> for optional features like location sharing and notifications (you can withdraw any time)</li>
+            <li><strong>Legitimate interests:</strong> service security, fraud prevention, analytics to improve performance (balanced against your rights)</li>
+            <li><strong>Legal obligation:</strong> where we must retain certain records (e.g., accounting/tax)</li>
+        </ul>
+    </section>
 
-### Purchase information
-Purchases and subscriptions are processed by Google Play. We receive entitlement and transaction verification data needed to provide purchases (for example, whether ad removal is active). We do not receive your full payment card details.
+    <section class="card">
+        <h2>Advertising, Analytics &amp; Third Parties</h2>
+        <p>We use third-party service providers to operate the app. Depending on your settings, these providers may process personal data on our behalf:</p>
+        <ul>
+            <li><strong>Google Firebase</strong> (authentication, Firestore database, Firebase Storage for images, analytics, crash reporting)</li>
+            <li><strong>Google Sign-In</strong> (sign-in via your Google account — we receive your Google display name, email, and profile photo URL)</li>
+            <li><strong>Google Maps</strong> (map display and related features)</li>
+            <li><strong>Google Play Billing</strong> (subscriptions and purchase processing)</li>
+            <li><strong>Google AdMob</strong> (advertising, unless removed)</li>
+        </ul>
+        <p class="meta">
+            You can control ad personalisation via your device settings or Google account settings. If you disable personalisation,
+            you may still see non-personalised ads. We do not knowingly serve personalised ads to children under 13.
+        </p>
+    </section>
 
-### Device, usage & diagnostics
-- Device information (model, OS version, app version, language)
-- App activity/usage data and performance diagnostics
-- Log and crash data to help fix bugs and improve reliability
+    <section class="card">
+        <h2>Publicly Visible Data</h2>
+        <p>The following data is visible to other users of the app:</p>
+        <ul>
+            <li><strong>Photographer profiles:</strong> business name, social links, profile photo, portfolio images, vehicle type tags, style tags, verified status, and (for Pro) website and approximate area</li>
+            <li><strong>Live location (Pro Photographers only):</strong> approximate latitude and longitude while sharing is enabled</li>
+            <li><strong>Recommended places:</strong> location names and coordinates submitted via the Recommend a Place feature</li>
+        </ul>
+        <p>Enthusiast accounts do not have a public profile and their data is not visible to other users beyond standard app functionality.</p>
+    </section>
 
----
+    <section class="card">
+        <h2>Sharing of Data</h2>
+        <p>We may share data:</p>
+        <ul>
+            <li>With service providers who help us run the app (as described above)</li>
+            <li>If required by law, court order, or to respond to valid legal process</li>
+            <li>To protect rights, safety, and security of users, the public, or the Service</li>
+            <li>In connection with a reorganisation, sale, or transfer of the Service (subject to appropriate safeguards)</li>
+        </ul>
+    </section>
 
-## 3) Permissions the App Uses
+    <section class="card">
+        <h2>Data Retention &amp; Deletion</h2>
+        <p>We keep personal data only as long as necessary to provide the Service and for legitimate business or legal purposes. Specific retention points:</p>
+        <ul>
+            <li><strong>Live location data:</strong> stored only while location sharing is active. Deleted immediately when you stop sharing, when the 8-hour auto-disable fires, or when you downgrade or delete your account.</li>
+            <li><strong>Profile and portfolio images:</strong> stored in Firebase Storage while your account is active. Deleted when you remove them from your profile, downgrade to a tier that doesn't include them, or delete your account.</li>
+            <li><strong>Account data:</strong> deleted on account deletion, which removes your Firestore public profile, private account document, Firebase Storage files, and Firebase Authentication record.</li>
+            <li><strong>Residual data:</strong> some data (such as crash logs or anonymised analytics) may be retained for a limited period after account deletion for legal, security, or diagnostic purposes.</li>
+        </ul>
+        <p>You can delete your account at any time from <strong>Menu → Settings → Delete Account</strong>.</p>
+    </section>
 
-- **Location (fine/coarse, foreground/background):** map features, proximity/nearby functions
-- **Notifications:** service alerts and updates (where enabled)
-- **Foreground service:** to run essential background tasks where needed
-- **Internet:** authentication, maps, syncing, subscriptions, ads
-- **Photos/Media/Storage:** to upload or save media you choose to share
+    <section class="card">
+        <h2>International Transfers</h2>
+        <p>
+            Some of our service providers may process data outside the UK (and outside the EEA).
+            Where this happens, we use appropriate safeguards such as the UK International Data Transfer Agreement
+            or Standard Contractual Clauses, as applicable.
+        </p>
+    </section>
 
-You can manage or revoke permissions at any time via device settings.
+    <section class="card">
+        <h2>Security</h2>
+        <p>
+            We use appropriate technical and organisational measures to protect personal data, including Firebase Authentication
+            token verification on each session, Firestore security rules that restrict data access to the account owner,
+            and server-side verification of subscription entitlements via Cloud Functions.
+            However, no method of transmission or storage is completely secure and we cannot guarantee absolute security.
+        </p>
+    </section>
 
----
+    <section class="card">
+        <h2>Your Rights</h2>
+        <p>Under UK GDPR (and EU GDPR where applicable), you may have the right to:</p>
+        <ul>
+            <li>Request access to your personal data</li>
+            <li>Request correction of inaccurate or incomplete data</li>
+            <li>Request deletion of your data (also available directly via Settings → Delete Account in the app)</li>
+            <li>Request restriction of processing</li>
+            <li>Object to processing (including processing based on legitimate interests)</li>
+            <li>Request data portability (in certain circumstances)</li>
+            <li>Withdraw consent at any time (where we rely on consent) — for example, by disabling location sharing or revoking permissions in device settings</li>
+        </ul>
+        <p>
+            To exercise your rights, contact us via in-app support or at Fotobombadvertising@gmail.com.
+            You also have the right to lodge a complaint with the
+            Information Commissioner's Office (ICO) if you believe your data rights have been infringed.
+        </p>
+    </section>
 
-## 4) How We Use Your Data
+    <section class="card">
+        <h2>Children's Privacy</h2>
+        <p>
+            Users under 13 require parent/guardian consent. We do not knowingly collect personal data from children under 13 without such consent.
+            We do not knowingly serve personalised ads to children under 13.
+            If we learn we have collected data without appropriate consent, we will take steps to delete it.
+        </p>
+    </section>
 
-We use data to:
+    <section class="card">
+        <h2>Changes to This Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. We will provide notice of material changes within the app or by other reasonable means.
+            The "Effective" date above shows when this policy was last updated.
+        </p>
+    </section>
 
-- Provide the Service (accounts, profiles, maps, listings, and uploads)
-- Enable location-based features (including Photographer location sharing when you choose to enable it)
-- Verify and manage subscriptions/entitlements (e.g., ad removal)
-- Display ads (unless removed) and measure ad performance
-- Maintain security, prevent fraud/abuse, and enforce our Terms
-- Improve performance, reliability, and user experience
-- Send essential service messages (and marketing only where you have consented, if applicable)
-
-### Legal bases for processing
-- **Contract:** to provide the Service you request (account, features, subscriptions)
-- **Consent:** for optional features like background location and notifications (you can withdraw any time)
-- **Legitimate interests:** service security, fraud prevention, analytics to improve performance (balanced against your rights)
-- **Legal obligation:** where we must retain certain records (e.g., accounting/tax)
-
----
-
-## 5) Advertising, Analytics & Third Parties
-
-We use third-party service providers to operate the app. Depending on your settings, these providers may process personal data on our behalf:
-
-- **Google Firebase** (authentication, databases, storage, analytics, crash reporting)
-- **Google Maps** (map display and related features)
-- **Google Play Billing** (subscriptions and purchase processing)
-- **Google AdMob** (advertising, unless removed)
-
-You can control ad personalisation via your device settings or Google account settings. If you disable personalisation, you may still see non-personalised ads. We do not knowingly serve personalised ads to children under 13.
-
----
-
-## 6) Sharing of Data
-
-We may share data:
-
-- With service providers who help us run the app (as described above)
-- If required by law, court order, or to respond to valid legal process
-- To protect rights, safety, and security of users, the public, or the Service
-- In connection with a reorganisation, sale, or transfer of the Service (subject to appropriate safeguards)
-
----
-
-## 7) International Transfers
-
-Some of our service providers may process data outside the UK (and outside the EEA). Where this happens, we use appropriate safeguards such as the UK International Data Transfer Agreement or Standard Contractual Clauses, as applicable.
-
----
-
-## 8) Security
-
-We use appropriate technical and organisational measures to protect personal data. However, no method of transmission or storage is completely secure and we cannot guarantee absolute security.
-
----
-
-## 9) Retention
-
-We keep personal data only as long as necessary to provide the Service and for legitimate business or legal purposes. For example, we may retain certain records to comply with legal obligations, resolve disputes, or enforce agreements.
-
----
-
-## 10) Your Rights
-
-Under UK GDPR (and EU GDPR where applicable), you may have the right to:
-
-- Request access to your personal data
-- Request correction of inaccurate or incomplete data
-- Request deletion of your data
-- Request restriction of processing
-- Object to processing (including processing based on legitimate interests)
-- Request data portability (in certain circumstances)
-- Withdraw consent at any time (where we rely on consent)
-
-To exercise your rights, contact us via in-app support. You also have the right to lodge a complaint with the **Information Commissioner’s Office (ICO)** if you believe your data rights have been infringed.
-
----
-
-## 11) Children’s Privacy
-
-Users under 13 require parent/guardian consent. We do not knowingly collect personal data from children under 13 without such consent. If we learn we have collected data without appropriate consent, we will take steps to delete it.
-
----
-
-## 12) Changes to This Policy
-
-We may update this Privacy Policy from time to time. We will provide notice of material changes within the app or by other reasonable means. The “Effective” date above shows when this policy was last updated.
+    <footer>
+        <img class="logo" src="logo_white.png" alt="Fotobomb logo">
+        <p>&copy; 2026 Fotobomb. All rights reserved.</p>
+        <p class="meta">Version 2.0 • Effective: 9 Feb 2026</p>
+    </footer>
+</main>
+</body>
+</html>
